@@ -1,22 +1,27 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
 
   <PropertyGroup>
-    <TargetFrameworks>net8.0</TargetFrameworks>
+    <TargetFramework>net9.0</TargetFramework>
+    <!--<TargetFrameworks>net8.0</TargetFrameworks>-->
     <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="OrchardCore.ContentManagement.Abstractions" Version="2.1.7" />
+    <!--<PackageReference Include="OrchardCore.ContentManagement.Abstractions" Version="2.1.7" />
     <PackageReference Include="OrchardCore.ContentTypes.Abstractions" Version="2.1.7" />
-    <PackageReference Include="OrchardCore.DisplayManagement" Version="2.1.7" />
-    <PackageReference Include="OrchardCore.Module.Targets" Version="2.1.7" />
-    <PackageReference Include="OrchardCore.ResourceManagement.Abstractions" Version="2.1.7" />
+    <PackageReference Include="OrchardCore.DisplayManagement" Version="2.1.7" />-->
+    <PackageReference Include="OrchardCore.Module.Targets" />
+    <!--<PackageReference Include="OrchardCore.ResourceManagement.Abstractions" Version="2.1.7" />
     <PackageReference Include="OrchardCore.ContentFields" Version="2.1.7" />
-    <PackageReference Include="OrchardCore.Html" Version="2.1.7" />
+    <PackageReference Include="OrchardCore.Html" Version="2.1.7" />-->
   </ItemGroup>
   
   <ItemGroup>
     <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\src\GuangCore\GuangCore.TopRef\GuangCore.TopRef.csproj" />
   </ItemGroup>
   
 </Project>
